@@ -32,6 +32,7 @@ namespace Lesson05
             //if (comboBox1.Text == "Steph")
             //    MessageBox.Show("You picked Steph");
 
+            //// nested 'if' statement 
             //if (comboBox1.Text != "Ste")
             //{
             //    if (comboBox1.Text == "SteJ")
@@ -68,7 +69,7 @@ namespace Lesson05
             //string[] myArraySize = new string[2];
             //myArraySize[0] = "SteJ";
             //myArraySize[1] = "Steph";
-            //myArraySize[2] = "Stevo"; // causes an out of bounds exception
+            ////myArraySize[2] = "Stevo"; // causes an out of bounds exception
             //MessageBox.Show(myArraySize[1]);
 
             //// array begin at [0] = Ste | [1] = SteJ | [2] = Stevo | [3] = Steph
@@ -81,9 +82,22 @@ namespace Lesson05
             //    MessageBox.Show(nickname);
             //}
 
-            //for (int i = 0; i < 5; i++)
+            //string[] myArray = { "Ste", "SteJ", "Stevo", "Steph" };
+            //for (int i = 0; i < myArray.Length; i++)
             //{
             //    MessageBox.Show(i.ToString());
+            //}
+
+            //// two dimensional array [0] = Ste | [1] = SteJ | [2] = Stevo | [3] = Steph
+            //string[] myArray = { "Ste", "SteJ", "Stevo", "Steph" };
+            
+            //for (int i = 0; i < myArray.Length;)
+            //{
+            //    // temp value nickname 
+            //    foreach (var nickname in myArray)
+            //    {
+            //        MessageBox.Show(i++ + " " + nickname);
+            //    }
             //}
 
             //int i = 0;
@@ -104,27 +118,27 @@ namespace Lesson05
             //    }
             //}
 
-            for (int i = 0; i < listBox1.SelectedItems.Count; i++)
-            {
-                switch (listBox1.SelectedItems[i].ToString())
-                {
-                    case "Foobar":
-                        MessageBox.Show("Foobar");
-                        break;
+            //for (int i = 0; i < listBox1.SelectedItems.Count; i++)
+            //{
+            //    switch (listBox1.SelectedItems[i].ToString())
+            //    {
+            //        case "Foobar":
+            //            MessageBox.Show("Foobar");
+            //            break;
 
-                    case "Bazquirk":
-                        MessageBox.Show("Bazquirk");
-                        break;
+            //        case "Bazquirk":
+            //            MessageBox.Show("Bazquirk");
+            //            break;
 
-                    case "Widgets":
-                        MessageBox.Show("Widgets");
-                        break;
+            //        case "Widgets":
+            //            MessageBox.Show("Widgets");
+            //            break;
 
-                    case "Gadgets":
-                        MessageBox.Show("Gadgets");
-                        break;
-                }
-            }
+            //        case "Gadgets":
+            //            MessageBox.Show("Gadgets");
+            //            break;
+            //    }
+            //}
         }
     }
 }
