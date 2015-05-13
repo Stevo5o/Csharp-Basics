@@ -21,14 +21,22 @@ namespace OOP
         {
             Car myCar = new Car();
             myCar.Make = "DeLorean";
-            myCar.ElapsedMilage = 9999999;
+            myCar.ElapsedMilage = 9999969;
+
+            //string result;
+            //result = myCar.Drive(30);
+            //MessageBox.Show(result);
+
+            myCar.Drive(40);
+
+            MessageBox.Show(myCar.ElapsedMilage.ToString());
 
             // MessageBox.Show(myCar.Make);
 
             // int result = AddTwoNumbers(3, 5);
             // displayMessage(result.ToString());
             // MessageBox.Show(result.ToString());
-            displayMessage(AddTwoNumbers(3, 5).ToString());
+            // displayMessage(AddTwoNumbers(3, 5).ToString());
         }
 
         // add two numbers method 
