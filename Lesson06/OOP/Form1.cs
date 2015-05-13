@@ -16,5 +16,16 @@ namespace OOP
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Car myCar = new Car();
+            myCar.Make = "DeLorean";
+            myCar.ElapsedMilage = 200000;
+
+            MessageBox.Show(myCar.Make);
+
+        }
+       
     }
 }
