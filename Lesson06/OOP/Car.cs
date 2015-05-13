@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    class Car
+    internal class Car
     {
         // fields
         private string _make;
@@ -19,6 +19,7 @@ namespace OOP
             get { return _make; }
             set { _make = value; }
         }
+
         public string Model
         {
             get { return _model; }

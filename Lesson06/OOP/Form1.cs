@@ -21,11 +21,25 @@ namespace OOP
         {
             Car myCar = new Car();
             myCar.Make = "DeLorean";
-            myCar.ElapsedMilage = 200000;
+            myCar.ElapsedMilage = 9999999;
 
-            MessageBox.Show(myCar.Make);
+            // MessageBox.Show(myCar.Make);
 
+            // int result = AddTwoNumbers(3, 5);
+            // displayMessage(result.ToString());
+            // MessageBox.Show(result.ToString());
+            displayMessage(AddTwoNumbers(3, 5).ToString());
         }
-       
+
+        // add two numbers method 
+        public int AddTwoNumbers(int firstNumber, int secondNumber)
+        {
+            return firstNumber + secondNumber;
+        }
+
+        public void displayMessage(string message)
+        {
+            MessageBox.Show((message));
+        }
     }
 }
