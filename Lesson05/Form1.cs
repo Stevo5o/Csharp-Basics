@@ -33,7 +33,7 @@ namespace Lesson05
             //    MessageBox.Show("You picked Steph");
 
             //// nested 'if' statement 
-            //if (comboBox1.Text != "Ste")
+            //if (comboBox1.Text != "Ste") // if not equal to Ste false go to else
             //{
             //    if (comboBox1.Text == "SteJ")
             //    {
