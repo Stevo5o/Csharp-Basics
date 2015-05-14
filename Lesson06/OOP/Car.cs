@@ -14,6 +14,21 @@ namespace OOP
         private string _model;
         private int _elapsedMilage;
 
+        /* 
+         * constructor excuted each time a new
+         * instance of this car class is created
+         */
+
+        public Car()
+        {
+            _make = "DEFAULT";
+            _model = "DEFAULT";
+            _elapsedMilage = 0;
+
+            // pop-up used to display the call to the constructor
+            System.Windows.Forms.MessageBox.Show("Called Constructor");
+        }
+
         // properties
         public string Make
         {

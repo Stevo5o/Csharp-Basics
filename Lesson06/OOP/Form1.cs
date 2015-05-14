@@ -19,7 +19,7 @@ namespace OOP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Car myCar = new Car();
+            Car myCar = new Car(); // ew keyword debug
             myCar.Make = "DeLorean";
             myCar.Model = "Time Machine";
             myCar.ElapsedMilage = 9999969;
@@ -39,11 +39,11 @@ namespace OOP
             // MessageBox.Show(result.ToString());
             // displayMessage(AddTwoNumbers(3, 5).ToString());
 
-            if (myCar.Make == "DeLorean")
-            {
-                string myModel = myCar.Model; // or move string myModel outside of code block
-                MessageBox.Show(myModel); // myModel has to be inside if code block to work.
-            }
+            //if (myCar.Make == "DeLorean")
+            //{
+            //    string myModel = myCar.Model; // or move string myModel outside of code block
+            //    MessageBox.Show(myModel); // myModel has to be inside if code block to work.
+            //}
         }
 
         // add two numbers method 
