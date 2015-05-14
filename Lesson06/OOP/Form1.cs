@@ -47,6 +47,8 @@ namespace OOP
 
             Car myOtherCar = new Car("Ecto-1", "Cadillac", 666);
             MessageBox.Show("My Other Car: " + myOtherCar.Make);
+
+            MessageBox.Show("Driving 300km will cost: " + Utility.CalculatePetrolPrices(300));
         }
 
         // add two numbers method 
