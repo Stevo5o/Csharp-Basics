@@ -37,10 +37,29 @@ namespace OOP
         }
 
         // properties
+        //public string Make
+        //{
+        //    get { return _make; }
+        //    set { _make = value; }
+        //}
+
         public string Make
         {
             get { return _make; }
-            set { _make = value; }
+            // set { return _make = value; }
+
+            // more control, filter out values using the set statement
+            set
+            {
+                if ((value == "DeLorean") || (value == "Ecto-1"))
+                {
+                    _make = value;
+                }
+                else
+                {
+                    _make = "not assigned";
+                }
+            }
         }
 
         public string Model

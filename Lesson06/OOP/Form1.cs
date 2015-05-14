@@ -24,6 +24,9 @@ namespace OOP
             myCar.Model = "Time Machine";
             myCar.ElapsedMilage = 9999969;
 
+            myCar.Make = "Batmobile";
+            MessageBox.Show("New Value: " + myCar.Make);
+
             //string result;
             //result = myCar.Drive(30);
             //MessageBox.Show(result);
