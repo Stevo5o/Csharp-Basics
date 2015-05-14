@@ -29,6 +29,13 @@ namespace OOP
             System.Windows.Forms.MessageBox.Show("Called Constructor");
         }
 
+        public Car(string make, string model, int elapsedMilage)
+        {
+            _make = make;
+            _model = model;
+            _elapsedMilage = elapsedMilage;
+        }
+
         // properties
         public string Make
         {

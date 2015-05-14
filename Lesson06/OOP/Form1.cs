@@ -44,6 +44,9 @@ namespace OOP
             //    string myModel = myCar.Model; // or move string myModel outside of code block
             //    MessageBox.Show(myModel); // myModel has to be inside if code block to work.
             //}
+
+            Car myOtherCar = new Car("Ecto-1", "Cadillac", 666);
+            MessageBox.Show("My Other Car: " + myOtherCar.Make);
         }
 
         // add two numbers method 
