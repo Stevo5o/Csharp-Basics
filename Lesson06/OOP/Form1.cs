@@ -21,15 +21,16 @@ namespace OOP
         {
             Car myCar = new Car();
             myCar.Make = "DeLorean";
+            myCar.Model = "Time Machine";
             myCar.ElapsedMilage = 9999969;
 
             //string result;
             //result = myCar.Drive(30);
             //MessageBox.Show(result);
 
-            myCar.Drive(40);
+            //myCar.Drive(40);
 
-            MessageBox.Show(myCar.ElapsedMilage.ToString());
+            //MessageBox.Show(myCar.ElapsedMilage.ToString());
 
             // MessageBox.Show(myCar.Make);
 
@@ -37,6 +38,12 @@ namespace OOP
             // displayMessage(result.ToString());
             // MessageBox.Show(result.ToString());
             // displayMessage(AddTwoNumbers(3, 5).ToString());
+
+            if (myCar.Make == "DeLorean")
+            {
+                string myModel = myCar.Model; // or move string myModel outside of code block
+                MessageBox.Show(myModel); // myModel has to be inside if code block to work.
+            }
         }
 
         // add two numbers method 
