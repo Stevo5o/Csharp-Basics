@@ -19,13 +19,23 @@ namespace OOP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Car myCar = new Car(); // ew keyword debug
+            Vehicle myCar = new Vehicle(); // new keyword, debug here
             myCar.Make = "DeLorean";
             myCar.Model = "Time Machine";
             myCar.ElapsedMilage = 9999969;
 
-            myCar.Make = "Batmobile";
-            MessageBox.Show("New Value: " + myCar.Make);
+            // demonstrating the creation adn use of an inherited class
+            Van myVan = new Van();
+            myVan.Make = "Volkswagen";
+            myVan.Model = "Camper";
+            myVan.ElapsedMilage = 203540;
+            myVan.Passengers = 6;
+
+            MessageBox.Show(myVan.Drive(30));
+            
+
+            //myCar.Make = "Batmobile";
+            //MessageBox.Show("New Value: " + myCar.Make);
 
             //string result;
             //result = myCar.Drive(30);
@@ -48,10 +58,10 @@ namespace OOP
             //    MessageBox.Show(myModel); // myModel has to be inside if code block to work.
             //}
 
-            Car myOtherCar = new Car("Ecto-1", "Cadillac", 666);
-            MessageBox.Show("My Other Car: " + myOtherCar.Make);
+            //Vehicle myOtherCar = new Vehicle("Ecto-1", "Cadillac", 666);
+            //MessageBox.Show("My Other Car: " + myOtherCar.Make);
 
-            MessageBox.Show("Driving 300km will cost: " + Utility.CalculatePetrolPrices(300));
+            //MessageBox.Show("Driving 300km will cost: " + Utility.CalculatePetrolPrices(300));
         }
 
         // add two numbers method 
