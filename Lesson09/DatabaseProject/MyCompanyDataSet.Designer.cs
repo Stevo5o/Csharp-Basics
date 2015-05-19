@@ -279,11 +279,11 @@ namespace DatabaseProject {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class CustomerDataTable : global::System.Data.TypedTableBase<CustomerRow> {
             
-            private global::System.Data.DataColumn columncustomerID;
+            private global::System.Data.DataColumn columnCustomerID;
             
-            private global::System.Data.DataColumn columnfirstName;
+            private global::System.Data.DataColumn columnFirstName;
             
-            private global::System.Data.DataColumn columnlastName;
+            private global::System.Data.DataColumn columnLastName;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -320,25 +320,25 @@ namespace DatabaseProject {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn customerIDColumn {
+            public global::System.Data.DataColumn CustomerIDColumn {
                 get {
-                    return this.columncustomerID;
+                    return this.columnCustomerID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn firstNameColumn {
+            public global::System.Data.DataColumn FirstNameColumn {
                 get {
-                    return this.columnfirstName;
+                    return this.columnFirstName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn lastNameColumn {
+            public global::System.Data.DataColumn LastNameColumn {
                 get {
-                    return this.columnlastName;
+                    return this.columnLastName;
                 }
             }
             
@@ -379,12 +379,12 @@ namespace DatabaseProject {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerRow AddCustomerRow(string firstName, string lastName) {
+            public CustomerRow AddCustomerRow(string FirstName, string LastName) {
                 CustomerRow rowCustomerRow = ((CustomerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        firstName,
-                        lastName};
+                        FirstName,
+                        LastName};
                 rowCustomerRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCustomerRow);
                 return rowCustomerRow;
@@ -392,9 +392,9 @@ namespace DatabaseProject {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerRow FindBycustomerID(int customerID) {
+            public CustomerRow FindByCustomerID(int CustomerID) {
                 return ((CustomerRow)(this.Rows.Find(new object[] {
-                            customerID})));
+                            CustomerID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -414,32 +414,32 @@ namespace DatabaseProject {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columncustomerID = base.Columns["customerID"];
-                this.columnfirstName = base.Columns["firstName"];
-                this.columnlastName = base.Columns["lastName"];
+                this.columnCustomerID = base.Columns["CustomerID"];
+                this.columnFirstName = base.Columns["FirstName"];
+                this.columnLastName = base.Columns["LastName"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columncustomerID = new global::System.Data.DataColumn("customerID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncustomerID);
-                this.columnfirstName = new global::System.Data.DataColumn("firstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfirstName);
-                this.columnlastName = new global::System.Data.DataColumn("lastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlastName);
+                this.columnCustomerID = new global::System.Data.DataColumn("CustomerID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustomerID);
+                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFirstName);
+                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastName);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columncustomerID}, true));
-                this.columncustomerID.AutoIncrement = true;
-                this.columncustomerID.AutoIncrementSeed = -1;
-                this.columncustomerID.AutoIncrementStep = -1;
-                this.columncustomerID.AllowDBNull = false;
-                this.columncustomerID.ReadOnly = true;
-                this.columncustomerID.Unique = true;
-                this.columnfirstName.AllowDBNull = false;
-                this.columnfirstName.MaxLength = 50;
-                this.columnlastName.AllowDBNull = false;
-                this.columnlastName.MaxLength = 50;
+                                this.columnCustomerID}, true));
+                this.columnCustomerID.AutoIncrement = true;
+                this.columnCustomerID.AutoIncrementSeed = -1;
+                this.columnCustomerID.AutoIncrementStep = -1;
+                this.columnCustomerID.AllowDBNull = false;
+                this.columnCustomerID.ReadOnly = true;
+                this.columnCustomerID.Unique = true;
+                this.columnFirstName.AllowDBNull = false;
+                this.columnFirstName.MaxLength = 50;
+                this.columnLastName.AllowDBNull = false;
+                this.columnLastName.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -582,34 +582,34 @@ namespace DatabaseProject {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int customerID {
+            public int CustomerID {
                 get {
-                    return ((int)(this[this.tableCustomer.customerIDColumn]));
+                    return ((int)(this[this.tableCustomer.CustomerIDColumn]));
                 }
                 set {
-                    this[this.tableCustomer.customerIDColumn] = value;
+                    this[this.tableCustomer.CustomerIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string firstName {
+            public string FirstName {
                 get {
-                    return ((string)(this[this.tableCustomer.firstNameColumn]));
+                    return ((string)(this[this.tableCustomer.FirstNameColumn]));
                 }
                 set {
-                    this[this.tableCustomer.firstNameColumn] = value;
+                    this[this.tableCustomer.FirstNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string lastName {
+            public string LastName {
                 get {
-                    return ((string)(this[this.tableCustomer.lastNameColumn]));
+                    return ((string)(this[this.tableCustomer.LastNameColumn]));
                 }
                 set {
-                    this[this.tableCustomer.lastNameColumn] = value;
+                    this[this.tableCustomer.LastNameColumn] = value;
                 }
             }
         }
@@ -773,9 +773,9 @@ namespace DatabaseProject.MyCompanyDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Customer";
-            tableMapping.ColumnMappings.Add("customerID", "customerID");
-            tableMapping.ColumnMappings.Add("firstName", "firstName");
-            tableMapping.ColumnMappings.Add("lastName", "lastName");
+            tableMapping.ColumnMappings.Add("customerID", "CustomerID");
+            tableMapping.ColumnMappings.Add("firstName", "FirstName");
+            tableMapping.ColumnMappings.Add("lastName", "LastName");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -988,14 +988,6 @@ SELECT customerID, firstName, lastName FROM Customer WHERE (customerID = @custom
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string firstName, string lastName, int Original_customerID, string Original_firstName, string Original_lastName) {
-            return this.Update(firstName, lastName, Original_customerID, Original_firstName, Original_lastName, Original_customerID);
         }
     }
     
