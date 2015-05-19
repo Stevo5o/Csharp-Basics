@@ -21,5 +21,15 @@ namespace DatabaseProject
         {
            customerTableAdapter1.Fill(myCompanyDataSet1.Customer);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bindingSource1.EndEdit();
+
+            int result = 0;
+            result = customerTableAdapter1.Update(myCompanyDataSet1.Customer);
+
+            MessageBox.Show(result.ToString());
+        }
     }
 }
