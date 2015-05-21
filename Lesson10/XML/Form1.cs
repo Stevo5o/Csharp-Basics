@@ -40,6 +40,12 @@ namespace XML
             linkLabel5.Text = "First child of carcollection: " + carcollection.FirstChild.InnerText;
 
             linkLabel6.Text = "First child of the first child of carcollection: " + carcollection.FirstChild.FirstChild.InnerText;
+
+            System.Xml.XmlNodeList carCollectionItems = carCollectionDoc.SelectNodes("carcollection/car");
+
+            System.Xml.XmlNode make = carCollectionItems.Item(0).SelectSingleNode("make");
+
+            linkLabel7.Text = "make.InnerText: " + make.InnerText;
         }
     }
 }
