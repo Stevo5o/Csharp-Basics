@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace XML
 {
@@ -29,6 +28,18 @@ namespace XML
             carCollectionDoc.Load(xr);
 
             linkLabel1.Text = carCollectionDoc.InnerText;
+
+            linkLabel2.Text = " First child node: " + carCollectionDoc.FirstChild.InnerText;
+
+            linkLabel3.Text = " Second child node: " + carCollectionDoc.FirstChild.NextSibling.InnerText;
+
+            System.Xml.XmlNode carcollection = carCollectionDoc.FirstChild.NextSibling;
+
+            linkLabel4.Text = "Now that we have a reference to 'carcollection': " + carcollection.FirstChild.InnerText;
+
+            linkLabel5.Text = "First child of carcollection: " + carcollection.FirstChild.InnerText;
+
+            linkLabel6.Text = "First child of the first child of carcollection: " + carcollection.FirstChild.FirstChild.InnerText;
         }
     }
 }
