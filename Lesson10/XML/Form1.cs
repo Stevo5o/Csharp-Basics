@@ -19,7 +19,7 @@ namespace XML
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.IO.StreamReader sr = new System.IO.StreamReader(@"cars.xml");
+            System.IO.StreamReader sr = new System.IO.StreamReader(@"cars.xml"); 
 
             System.Xml.XmlTextReader xr = new System.Xml.XmlTextReader(sr);
 
